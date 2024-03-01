@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <section
         className=" w-screen h-full flex items-center justify-center flex-col
-                    px-[15re] py-[60px] bg-[radial-gradient(at_50%_0%,#202023_0%,transparent_100%)]"
+                     py-[60px] bg-[radial-gradient(at_50%_0%,#202023_0%,transparent_100%)]"
       >
         <div
           className="flex flex-col w-full max-w-[900px] gap-[px]
@@ -36,8 +36,11 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center gap-28 mt-36">
-          <div className="h-fit w-[650px] max-w-[573px] border p-1 border-gray-200/20 rounded-lg">
+        <div className="flex xl:flex-row flex-col justify-center items-center gap-28 mt-36">
+          <div
+            className="h-fit xl:w-[650px] sm:w-[420px]  w-[300px] flex  flex-col  border p-1 border-grgit push origin new-branch-name
+ay-200/20 rounded-lg"
+          >
             <img
               src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a3ddbbac69920c34850ab2_code-editor-light.svg"
               alt="hero"
@@ -54,8 +57,8 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="h-full w-[573px] flex flex-col justify-center items-center">
-            <div className="h-full py-auto">
+          <div className="h-full   xl:w-[573px] flex xl:flex-row flex-col justify-center items-center">
+            <div className="h-full flex flex-col xl:items-start items-center py-auto">
               <img
                 src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a3d7c268afcbe458016a92_plan-icon.svg"
                 alt=""
@@ -74,15 +77,16 @@ const Hero = () => {
                 GitHub.
               </p>
             </div>
-            <div className="h-full py-auto">
+            <div className="h-full py-auto flex xl:items-start flex-col items-center">
               <img
                 src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a3d8f0482139b2d675c340_code-icon.svg"
                 alt=""
-                className="px-4"
+                className="px-4  w-[70px]"
               />
               <h3 className="text-2xl font-medium py-4 px-4 flex">
                 Update from suggestions
                 <img
+                  className=""
                   src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a3e3d50aeee6b1eea80bd4_chevron-right-highlight.svg"
                   alt=""
                 />
@@ -127,9 +131,9 @@ const Hero = () => {
         </div>
 
         {/* grid */}
-        <div className="flex flex-col w-full items-center justify-center px-[15rem] ">
-          <div className="flex justify-evenly w-full gap-8 pb-2">
-            <div className="w-[33%] h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
+        <div className="flex flex-col w-full items-center justify-center xl:px-[15rem] ">
+          <div className="flex xl:justify-evenly items-center  xl:flex-row flex-col w-full gap-8 pb-2">
+            <div className="xl:w-[33%] w-[50vw] xl:h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
               <img
                 src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a4ea7c5fab23fac796ca52_no-config-icon.svg"
                 alt=""
@@ -146,7 +150,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="w-[33%] h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
+            <div className="xl:w-[33%] w-[50vw] xl:h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
               <img
                 src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a4ea7c5fab23fac796ca52_no-config-icon.svg"
                 alt=""
@@ -163,43 +167,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="w-[33%] h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
-              <img
-                src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a4ea7c5fab23fac796ca52_no-config-icon.svg"
-                alt=""
-                className="px-4 pt-4"
-              />
-              <h3 className="text-xl font-medium py-4 px-4 ">
-                {" "}
-                Zero configuration
-              </h3>
-              <p className="text-[#c2c2c2] text-md font-medium mt-0 mb-4 text-left px-4">
-                Start from a template or import your data model file from your
-                GitHub repository. Easy one-click start button to get you
-                started with Hubql.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex justify-evenly w-full gap-8 py-8">
-            <div className="w-[50%] h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
-              <img
-                src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a4ea7c5fab23fac796ca52_no-config-icon.svg"
-                alt=""
-                className="px-4 pt-4"
-              />
-              <h3 className="text-xl font-medium py-4 px-4 ">
-                {" "}
-                Zero configuration
-              </h3>
-              <p className="text-[#c2c2c2] text-md font-medium mt-0 mb-4 text-left px-4">
-                Start from a template or import your data model file from your
-                GitHub repository. Easy one-click start button to get you
-                started with Hubql.
-              </p>
-            </div>
-
-            <div className="w-[50%] h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
+            <div className="xl:w-[33%] w-[50vw] xl:h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
               <img
                 src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a4ea7c5fab23fac796ca52_no-config-icon.svg"
                 alt=""
@@ -217,8 +185,8 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex justify-evenly w-full gap-10 py-2">
-            <div className="w-[50%] h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
+          <div className="flex justify-evenly w-full gap-8 py-8 px-8 items-center flex-col xl:flex-row">
+            <div className="xl:w-[50%] w-[50vw] xl:h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
               <img
                 src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a4ea7c5fab23fac796ca52_no-config-icon.svg"
                 alt=""
@@ -235,7 +203,43 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="w-[50%] h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
+            <div className="xl:w-[50%] w-[50vw] xl:h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
+              <img
+                src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a4ea7c5fab23fac796ca52_no-config-icon.svg"
+                alt=""
+                className="px-4 pt-4"
+              />
+              <h3 className="text-xl font-medium py-4 px-4 ">
+                {" "}
+                Zero configuration
+              </h3>
+              <p className="text-[#c2c2c2] text-md font-medium mt-0 mb-4 text-left px-4">
+                Start from a template or import your data model file from your
+                GitHub repository. Easy one-click start button to get you
+                started with Hubql.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-evenly w-full gap-10 py-2 items-center flex-col xl:flex-row">
+            <div className="xl:w-[50%] w-[50vw] xl:h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
+              <img
+                src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a4ea7c5fab23fac796ca52_no-config-icon.svg"
+                alt=""
+                className="px-4 pt-4"
+              />
+              <h3 className="text-xl font-medium py-4 px-4 ">
+                {" "}
+                Zero configuration
+              </h3>
+              <p className="text-[#c2c2c2] text-md font-medium mt-0 mb-4 text-left px-4">
+                Start from a template or import your data model file from your
+                GitHub repository. Easy one-click start button to get you
+                started with Hubql.
+              </p>
+            </div>
+
+            <div className="xl:w-[50%] w-[50vw] xl:h-fit border border-gray-600/90 rounded-xl flex flex-col items-start justify-center">
               <img
                 src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a4ea7c5fab23fac796ca52_no-config-icon.svg"
                 alt=""
@@ -263,7 +267,7 @@ const Hero = () => {
           className="flex w-96 h-[1px] justify-center
         bg-gradient-to-r from-transparent from-0% via-gray-500 via-50% to-transpatent to-90%"
         ></div>
-        <div className="">
+        <div className="flex flex-col items-center text-center">
           <h2 className=" pt-16 text-4xl font-bold">
             Integrated into your development cycle
           </h2>
@@ -272,14 +276,15 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex justify-center px-[15rem] py-[5rem]">
+        <div className="flex  xl:flex-row flex-col justify-center xl:px-[15rem] py-[5rem]">
           <img
+            className=" ml-[52px]  xl:w-[650px] sm:w-[420px]  w-[300px] "
             src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a3df0defb4d356b6975d83_collab-asset-light.svg"
             alt=""
           />
 
           <div className="flex flex-col w-[50%] pl-20">
-            <div className="flex w-full p-2 gap-4">
+            <div className="flex w-full p-2 gap-4 flex-col md:flex-row">
               <div className="w-fit h-fit border border-transparent hover:border-gray-500 p-4 rounded-lg">
                 <img
                   src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a3d7c268afcbe458016a92_plan-icon.svg"
@@ -303,7 +308,7 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-            <div className="flex w-full p-2 gap-4">
+            <div className="flex w-full p-2 gap-4 flex-col md:flex-row">
               <div className="w-fit h-fit border border-transparent hover:border-gray-500 p-4 rounded-lg">
                 <img
                   src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64a3d7c268afcbe458016a92_plan-icon.svg"

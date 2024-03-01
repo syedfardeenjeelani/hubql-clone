@@ -3,13 +3,14 @@ import React from "react";
 const Footer = () => {
   return (
     <section>
-      <div className="flex justify-center w-full px-[15rem] items-start">
+      <div className="flex xl:justify-center w-full xl:px-[15rem]  xl:flex-row flex-col xl:items-start">
         {" "}
         <img
+          className="w-[8rem]"
           src="https://uploads-ssl.webflow.com/63a42963d46c17f428220c43/64818edb05be9f0de0f0202c_hubql-logo.svg"
           alt=""
         />
-        <div className="flex flex-col w-fit px-8">
+        <div className="flex  xl:flex-col w-fit px-8">
           <ul>
             <li className="text-white text- font-bold font-sans">FEATURES</li>
             <li>Plan</li>
